@@ -1,5 +1,14 @@
+'''Modul with all functions of the programm
+'''
+
+
 def welcome_message():
-    pass
+    '''Function returns welcome message
+
+    Returns:
+        str: Text of welcome message
+    '''
+    return 'Witaj w programie TOTOLOTEK, który obliczy jak długo możesz czekać na wygraną w LOTTO.'
 
 
 def type_of_numbers():
