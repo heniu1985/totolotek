@@ -11,12 +11,35 @@ def welcome_message():
     return 'Witaj w programie TOTOLOTEK, który obliczy jak długo możesz czekać na wygraną w LOTTO.'
 
 
-def type_of_numbers():
-    pass
+def change_user_input_to_list(*args: int) -> list:
+    '''Function change user numbers to list
+
+    Returns:
+        list: List of user inputs
+    '''
+    return list(args)
 
 
-def take_user_numbers():
-    pass
+def check_user_numbers(user_numbers: list) -> bool:
+    '''Function checks that user inputs are integers and that he inputs only six numbers
+
+    Args:
+        user_numbers (list): List of user inputs
+
+    Returns:
+        bool: Return True when user input consits of six integers
+    '''
+    if len(user_numbers) != 6:
+        return False
+
+    for number in user_numbers:
+        if not isinstance(number, int):
+            return False
+
+        if number not in range(1, 50):
+            return False
+
+    return True
 
 
 def draw_numbers():
