@@ -34,4 +34,5 @@ def test_draw_numbers():
 
 
 def test_compare_numbers():
-    pass
+    assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [6, 1, 2, 3, 5, 4]) is True
+    assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [4, 5, 23, 54, 12, 34]) is False
