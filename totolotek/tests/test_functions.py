@@ -29,7 +29,8 @@ def test_check_user_numbers():
 
 
 def test_draw_numbers():
-    pass
+    assert isinstance(functions.draw_numbers(), list)
+    assert len(functions.draw_numbers()) == 6
 
 
 def test_compare_numbers():
