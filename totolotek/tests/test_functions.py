@@ -16,7 +16,7 @@ def test_change_user_input_to_list():
     '''Tests change_user_input_to_list function
     '''
     assert functions.change_user_input_to_list(2, 5, 34, 49, 13, 19) == [2, 5, 34, 49, 13, 19]
-    assert functions.change_user_input_to_list() == []
+    assert not functions.change_user_input_to_list()
     assert functions.change_user_input_to_list(2, '1') == [2, '1']
 
 
