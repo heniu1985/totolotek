@@ -43,7 +43,7 @@ def check_user_numbers(user_numbers: list) -> bool:
     return True
 
 
-def draw_numbers():
+def draw_numbers() -> list:
     '''Function draw six numbers between 1 and 49
 
     Returns:
@@ -57,5 +57,17 @@ def draw_numbers():
     return output
 
 
-def compare_numbers():
-    pass
+def compare_numbers(user_numbers: list, drawn_numbers: list) -> bool:
+    '''Function compare drawn numbers with unmbers given by user
+
+    Args:
+        user_numbers (list): List of numbers given by user
+        drawn_numbers (list): List of drawn numbers
+
+    Returns:
+        bool: _description_
+    '''
+    if set(user_numbers) == set(drawn_numbers):
+        return True
+
+    return False
