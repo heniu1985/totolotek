@@ -44,6 +44,11 @@ def check_user_numbers(user_numbers: list) -> bool:
 
 
 def draw_numbers():
+    '''Function draw six numbers between 1 and 49
+
+    Returns:
+        list: List of numbers
+    '''
     output = []
     for _ in range(6):
         number = randint(1, 49)

@@ -29,10 +29,12 @@ def test_check_user_numbers():
 
 
 def test_draw_numbers():
+    '''Tests draw_numbers function'''
     assert isinstance(functions.draw_numbers(), list)
     assert len(functions.draw_numbers()) == 6
 
 
 def test_compare_numbers():
+    '''Tests compare_numbers function'''
     assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [6, 1, 2, 3, 5, 4]) is True
     assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [4, 5, 23, 54, 12, 34]) is False
