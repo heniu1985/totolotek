@@ -1,5 +1,6 @@
 '''Modul with all functions of the programm
 '''
+from random import randint
 
 
 def welcome_message():
@@ -43,7 +44,12 @@ def check_user_numbers(user_numbers: list) -> bool:
 
 
 def draw_numbers():
-    pass
+    output = []
+    for _ in range(6):
+        number = randint(1, 49)
+        output.append(number)
+
+    return output
 
 
 def compare_numbers():
