@@ -71,3 +71,13 @@ def compare_numbers(user_numbers: list, drawn_numbers: list) -> bool:
         return True
 
     return False
+
+
+def how_many_draws_to_win(user_numbers: list, drawn_numbers: list) -> int:
+    draw_id = 1
+    while True:
+        if compare_numbers(user_numbers, drawn_numbers):
+            return draw_id
+        else:
+            drawn_numbers = draw_numbers()
+            draw_id += 1

@@ -42,3 +42,10 @@ def test_compare_numbers():
     '''
     assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [6, 1, 2, 3, 5, 4]) is True
     assert functions.compare_numbers([1, 2, 3, 4, 5, 6], [4, 5, 23, 54, 12, 34]) is False
+
+
+def test_how_many_draws_to_win():
+    '''Tests how_many_draws function
+    '''
+    assert isinstance(functions.how_many_draws_to_win([1, 2, 3, 4, 5, 6], [6, 1, 2, 3, 5, 4]), int)
+    assert isinstance(functions.how_many_draws_to_win([1, 2, 3, 4, 5, 6], [6, 1, 33, 5, 4]), int)
