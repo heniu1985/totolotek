@@ -74,6 +74,15 @@ def compare_numbers(user_numbers: list, drawn_numbers: list) -> bool:
 
 
 def how_many_draws_to_win(user_numbers: list, drawn_numbers: list) -> int:
+    '''Function counts how many draws we need to win
+
+    Args:
+        user_numbers (list): List with user numbers
+        drawn_numbers (list): List with drawn numbers
+
+    Returns:
+        int: Number of draws
+    '''
     draw_id = 1
     while True:
         if compare_numbers(user_numbers, drawn_numbers):
