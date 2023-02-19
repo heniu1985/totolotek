@@ -1,6 +1,7 @@
 '''Modul with all functions of the programm
 '''
 from random import randint
+from math import floor
 
 
 def welcome_message():
@@ -92,5 +93,13 @@ def how_many_draws_to_win(user_numbers: list, drawn_numbers: list) -> int:
             draw_id += 1
 
 
-def how_long_it_will_take():
-    pass
+def how_long_it_will_take(number_of_draws: int) -> int:
+    '''Function calculate how many days you need to win in lottery
+
+    Args:
+        number_of_draws (int): Number of draws needed to win
+
+    Returns:
+        int: Number of days needed to win
+    '''
+    return floor((number_of_draws / 3) * 7)
