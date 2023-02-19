@@ -90,3 +90,7 @@ def how_many_draws_to_win(user_numbers: list, drawn_numbers: list) -> int:
         else:
             drawn_numbers = draw_numbers()
             draw_id += 1
+
+
+def how_long_it_will_take():
+    pass
