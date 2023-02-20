@@ -49,11 +49,11 @@ def test_how_many_draws_to_win():
     assert isinstance(functions.how_many_draws_to_win([1, 2, 3, 4, 5, 6], [6, 1, 33, 5, 4]), int)
 
 
-def test_how_long_it_will_take():
-    '''Tests how_long_it_will_take function
+def test_how_many_days_it_will_take():
+    '''Tests how_many_days_it_will_take function
     '''
-    assert functions.how_long_it_will_take(10) == 23
-    assert functions.how_long_it_will_take(3546) == 8274
+    assert functions.how_many_days_it_will_take(10) == 23
+    assert functions.how_many_days_it_will_take(3546) == 8274
 
 
 def test_expenses_to_win():

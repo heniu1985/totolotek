@@ -96,7 +96,7 @@ def how_many_draws_to_win(user_numbers: list, drawn_numbers: list) -> int:
             draw_id += 1
 
 
-def how_long_it_will_take(number_of_draws: int, number_of_draws_in_week=3) -> int:
+def how_many_days_it_will_take(number_of_draws: int, number_of_draws_in_week=3) -> int:
     '''Function calculate how many days you need to win in lottery
 
     Args:
