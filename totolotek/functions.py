@@ -103,3 +103,16 @@ def how_long_it_will_take(number_of_draws: int, number_of_draws_in_week=3) -> in
         int: Number of days needed to win
     '''
     return floor((number_of_draws / number_of_draws_in_week) * 7)
+
+
+def expenses_to_win(number_of_draws: int, ticket_price: float = 3) -> float:
+    '''Function calculate how much money will we spend to win in lottery
+
+    Args:
+        number_of_draws (int): Number of draws needed to win in lottery
+        ticket_price (float, optional): One ticket we must spend to participate in lottery. Defaults to 3.
+
+    Returns:
+        float: Ammout of money needed to win in lottery
+    '''
+    return number_of_draws * ticket_price

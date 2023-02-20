@@ -56,3 +56,11 @@ def test_how_long_it_will_take():
     '''
     assert functions.how_long_it_will_take(10) == 23
     assert functions.how_long_it_will_take(3546) == 8274
+
+
+def test_expenses_to_win():
+    '''Tests expenses_to_win function
+    '''
+    assert functions.expenses_to_win(3333) == 9999
+    assert functions.expenses_to_win(345, 2) == 690
+    assert functions.expenses_to_win(5, 5) == 25
