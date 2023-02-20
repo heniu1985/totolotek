@@ -13,13 +13,16 @@ def welcome_message():
     return 'Witaj w programie TOTOLOTEK, który obliczy jak długo możesz czekać na wygraną w LOTTO.'
 
 
-def change_user_input_to_list(*args: int) -> list:
+def change_user_input_to_list(user_numbers: str) -> list:
     '''Function change user numbers to list
 
     Returns:
         list: List of user inputs
     '''
-    return list(args)
+    user_numbers = user_numbers.split(',')
+    user_numbers = [int(number) for number in user_numbers]
+
+    return user_numbers
 
 
 def check_user_numbers(user_numbers: list) -> bool:
