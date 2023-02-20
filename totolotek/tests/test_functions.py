@@ -56,6 +56,13 @@ def test_how_many_days_it_will_take():
     assert functions.how_many_days_it_will_take(3546) == 8274
 
 
+def test_how_long_it_will_take():
+    '''Tests how_long_it_will_take function
+    '''
+    assert functions.how_long_it_will_take(365) == 'Wygrana zajmie nam 1 rok, 0 miesięcy i 0 dni.'
+    assert functions.how_long_it_will_take(200) == "Wygrana zajmie nam 0 rok, 28 miesięcy i 4 dni."
+
+
 def test_expenses_to_win():
     '''Tests expenses_to_win function
     '''
