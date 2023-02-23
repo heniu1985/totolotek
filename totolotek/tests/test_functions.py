@@ -60,7 +60,7 @@ def test_how_long_it_will_take():
     '''Tests how_long_it_will_take function
     '''
     assert functions.how_long_it_will_take(365) == 'Wygrana zajmie nam 1 rok, 0 miesięcy i 0 dni.'
-    assert functions.how_long_it_will_take(200) == "Wygrana zajmie nam 0 rok, 28 miesięcy i 4 dni."
+    assert functions.how_long_it_will_take(200) == "Wygrana zajmie nam 0 rok, 6 miesięcy i 20 dni."
 
 
 def test_expenses_to_win():

@@ -112,7 +112,7 @@ def how_long_it_will_take(number_of_days: int) -> str:
     years = floor(number_of_days / 365)
     months = floor(number_of_days % 365) / 30
     days = floor(number_of_days % 365) % 30
-    return f'Wygrana zajmie nam {years} rok, {months} miesięcy, {days} dni.'
+    return f'Wygrana zajmie nam {int(years)} rok, {int(months)} miesięcy i {int(days)} dni.'
 
 
 def expenses_to_win(number_of_draws: int, ticket_price: float = 3) -> float:
